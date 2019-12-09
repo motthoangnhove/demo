@@ -26,6 +26,7 @@ public class BaseActivity extends AppCompatActivity {
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.setStatusBarColor(Color.parseColor("#FFFFFF"));
         }
+        System.out.println("abc");
     }
     private void logPhoneNumber() {
         String phoneNumber = ((FunnyFarmApplication)getApplicationContext()).getPhoneNumber();
