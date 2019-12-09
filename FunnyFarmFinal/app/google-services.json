@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "468055389321",
+    "firebase_url": "https://funny-farm-4086b.firebaseio.com",
+    "project_id": "funny-farm-4086b",
+    "storage_bucket": "funny-farm-4086b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468055389321:android:5143df6d64809e89530258",
+        "android_client_info": {
+          "package_name": "com.adc.funnyfarmfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468055389321-ts9r7sdqfqvkpod32e6i2pm6g8ao1ard.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfnOK7ofrt06kWjQqjQjYk1PlmFLN-OJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468055389321-ts9r7sdqfqvkpod32e6i2pm6g8ao1ard.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

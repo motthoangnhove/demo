@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Funny Farm</string>
+    <string name="title_notification">Thông báo</string>
+    <string name="label_button_ok">OK</string>
+    <string name="label_session_lose">Hết phiên làm việc mời bạn đăng nhập lại</string>
+    <string name="title_message_not_connect_internet">Lỗi mất kết nối internet, mời bạn kiểm tra lại.</string>
+    <!--màn hình login-->
+    <!--màn hình đăng ký-->
+
+</resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <LinearLayout
+                    android:id="@+id/lyContainerIvBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/ivBack"
+                        android:layout_width="@dimen/d25dp"
+                        android:layout_height="@dimen/d25dp"
+                        android:background="@drawable/ic_arrow_left"/>
+                </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/d37353D"
+                android:textSize="@dimen/d18sp"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Xác thực"
+                android:layout_marginRight="@dimen/d57dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d2dp"
+            android:background="@color/dFE9870"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/d40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_smartphone" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/d24dp"
+                android:paddingTop="@dimen/d24dp"
+                android:paddingRight="@dimen/d24dp"
+                android:paddingLeft="@dimen/d24dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Xác thực số điện thoại"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/d37353D"
+                    android:textSize="28sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d8dp"
+                    android:text="Chúng tôi đã gửi mã xác thực đến"
+                    android:textColor="@color/d7A7F83"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="@dimen/d17sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="số điện thoại của bạn"
+                    android:textColor="@color/d7A7F83"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="@dimen/d17sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d11dp"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đã gửi đến"
+                    android:textColor="@color/d14AC69"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="@dimen/d14sp"/>
+                    <TextView
+                        android:id="@+id/tvPhoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d5dp"
+                        android:text="0919-456-789"
+                        android:textColor="@color/d14AC69"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="@dimen/d14sp"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d34dp"
+                    android:text="Mã xác thực"
+                    android:textColor="@color/d7A7F83"
+                    android:fontFamily="@font/roboto_light"
+                    android:textSize="@dimen/d17sp"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nhập mã xác thực"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/d383F45"
+                    android:textSize="@dimen/d20sp">
+                    <requestFocus />
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1dp"
+                android:layout_marginTop="@dimen/d12dp"
+                android:background="@color/d14AC69"/>
+            <Button
+                android:id="@+id/btnVerifyCode"
+                android:layout_width="@dimen/d280dp"
+                android:layout_height="@dimen/d50dp"
+                android:layout_marginTop="@dimen/d80dp"
+                android:textSize="@dimen/d12sp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/roboto_bold"
+                android:background="@drawable/gradient_background_round"
+                android:text="Xác nhận"
+                />
+        </LinearLayout>
+</LinearLayout>
